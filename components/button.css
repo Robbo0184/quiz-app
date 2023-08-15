@@ -1,4 +1,8 @@
 .show--answer {
-    width: 9vw;
+    min-width: 9vw;
     height: 6vh;
+    border-radius: 10%;
+    background-color: rgb(206, 123, 233);
+    color:rgb(255, 255, 255);
+    font-size: 1.1rem;
 }

@@ -1,12 +1,22 @@
+footer {
+    display: flex;
+}
+
+
 nav {
     display: flex;
     justify-content: space-evenly;
     position: fixed;
-    bottom: 0.3rem;
+    border: 2px solid grey;
+    bottom: 0rem;
+    min-height: 7vh;
     width: 100vw;
+    z-index: 10;
+    background-color: aqua;
 }
 
 
 .nav--icon {
     width: 4rem;
 }
+
