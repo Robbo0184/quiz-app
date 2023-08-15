@@ -5,4 +5,12 @@
     background-color: rgb(206, 123, 233);
     color:rgb(255, 255, 255);
     font-size: 1.1rem;
+    text-shadow: 1px 1px 1px pink;
+}
+
+.show--answer:hover{
+    background-color: aqua;
+    min-width: 9.2vw;
+    height: 6.2vh;
+
 }

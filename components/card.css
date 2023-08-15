@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(215, 215, 255);
+    background-color: rgba(37, 31, 219, 0.546);
 }
 
 
@@ -16,19 +16,23 @@ main {
     align-items: center;
     text-align: center;
     gap: 2rem;
+    
     }
 
 .card--question {
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: aquamarine;
+    background-color: rgb(32, 138, 102);
+    color:rgb(235, 234, 193);
+    text-shadow: 1px 1px 1px pink;
     padding: 2rem;
     gap: 2.4rem;
     align-items: center;
     min-height: 25vh;
     width: 70vw;
     border: 2px solid grey ;
+    box-shadow: 4px 4px 4px rgba(223, 75, 17, 0.56);
 
 }
 
@@ -43,8 +47,7 @@ main {
      top: -9%;
      right: 0;
      
-     
-}
+    }
 
 .hashtag-container {
     display: flex;
@@ -60,4 +63,6 @@ main {
     border-radius: 10%;
     padding: 0.2rem;
     background-color: rgb(236, 230, 35);
+    color: darkblue;
+    text-shadow: 1px 1px 1px pink;
 }
