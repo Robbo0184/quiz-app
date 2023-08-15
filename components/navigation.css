@@ -1,0 +1,12 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0.3rem;
+    width: 100vw;
+}
+
+
+.nav--icon {
+    width: 4rem;
+}
