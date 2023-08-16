@@ -3,5 +3,27 @@
     margin: 0;
     padding: 0;
  }
- 
 
+ body {
+    background-color: rgba(37, 31, 219, 0.546);
+}
+
+header {
+    text-align: center;
+    margin: 1.6rem;
+    color: rgb(36, 223, 211);
+    text-shadow: var(--text-shadow);
+}
+
+main {
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+}
+ 
+:root {
+    --text-shadow: 1px 1px 1px pink;
+    --box-shadow: 4px 4px 4px rgba(223, 75, 17, 0.56);
+    --card-backround-colour: rgb(32, 138, 102);
+    --card-text-colour: rgb(235, 234, 193)
+}
