@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./js/app.js" defer></script>
     <title>Quiz App Homepage</title>
 
 </head>
@@ -20,8 +21,8 @@
                     <img class="card--bookmark" src="./images/bookmark.png" alt="bookmark icon">
                 
                 <h2>What is the national currency of Morocco?</h2>
-                <button class="show--answer">Show Answer</button>
-                <h2 class="card--answer">The Moroccan Dirham</h2>
+                <button id="showAnswer" class="show--answer">Show Answer</button>
+                <h2 id="firstAnswer" class="card--answer">The Moroccan Dirham</h2>
                 <section class="hashtag-container">
                     <p class="hashtag">#general knowledge</p>
                 </section>
@@ -63,6 +64,9 @@
             </article>
             <article class="nav--element profile">
                 <a href=""><img class="nav--icon" src="./images/profile.png" alt="profile-icon"></a>
+            </article>
+            <article class="nav--element new-form">
+                <a href="./form.html"><img class="nav--icon" src="./images/form.png" alt="new-form-icon"></a>
             </article>
         </nav>
     </footer>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/form.js" defer></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Quiz App</h1>
+    </header>
+    <main>
+        <form id="questionForm" action="">
+            <label class="form--label" for="question">Please enter your question: </label>
+            <textarea class="form--text--area" name="question" id="question" cols="30" rows="5"></textarea>
+
+            <label class="form--label" for="answer">Please enter your answer:</label>
+            <textarea class="form--text--area" name="answer" id="answer" cols="30" rows="5"></textarea>
+
+            <label class="form--label" for="tag">Please enter some categories for your question: </label>
+            <input type="text" name="tag" id="tag">
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <article class="nav--element home">
+                <a href="./index.html"><img class="nav--icon" 
+                        src="./images/home.png" alt="homepage-icon"></a>
+            </article>
+            <article class="nav--element bookmark">
+                <a href="./bookmarks.html"><img class="nav--icon" src="./images/bookmark.png" alt="bookmark-icon"></a>
+            </article>
+            <article class="nav--element profile">
+                <a href=""><img class="nav--icon" src="./images/profile.png" alt="profile-icon"></a>
+            </article>
+            <article class="nav--element new-form">
+                <a href="./form.html"><img class="nav--icon" src="./images/form.png" style="background-color: rgb(189, 177, 11);" alt="new-form-icon"></a>
+            </article>
+        </nav>
+    </footer>
+</body>
+
+</html>

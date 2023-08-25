@@ -1,0 +1,22 @@
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+    background-color: aqua;
+    min-width: 70vw;
+    padding-bottom: 1.7rem;
+}
+
+.form--label{
+    padding-bottom: 1.3rem;
+}
+
+.form--text--area{
+    max-width: 40vw;
+}

@@ -36,9 +36,21 @@ main {
 
 }
 
+
 .card--answer {
     visibility: hidden;
     padding-bottom: rem;
+}
+
+.hidden {
+    visibility: visible;
+}
+
+
+
+
+.bookmark--click {
+    background-color: chartreuse;
 }
 
 .card--bookmark {
@@ -46,6 +58,7 @@ main {
      position: absolute;
      top: -9%;
      right: 0;
+    
      
     }
 
