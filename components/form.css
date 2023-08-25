@@ -13,10 +13,74 @@ form {
     padding-bottom: 1.7rem;
 }
 
+.count {
+    float: right;
+    padding: 0.1rem 0 0 0;
+    font-size: 0.875rem;
+  }
+
 .form--label{
     padding-bottom: 1.3rem;
 }
 
 .form--text--area{
     max-width: 40vw;
+}
+
+.question--card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--card-backround-colour);
+    color:var(--card-text-colour);
+    text-shadow: var(--text-shadow);
+    padding: 2rem;
+    margin-top: 2rem;
+    gap: 2.4rem;
+    align-items: center;
+    min-height: 25vh;
+    width: 70vw;
+    border: 2px solid grey ;
+    box-shadow: var(--box-shadow);
+}
+
+.card--answer {
+    visibility: hidden;
+    padding-bottom: rem;
+}
+
+.hidden {
+    visibility: visible;
+}
+
+
+
+
+.bookmark--click {
+    background-color: chartreuse;
+}
+
+.card--bookmark {
+     width: 3rem;
+     position: absolute;
+     top: -9%;
+     right: 0;
+    
+     
+    }
+
+
+
+.form-hashtag-container{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+    border: 1px solid grey;
+    border-radius: 10%;
+    padding: 0.2rem;
+    background-color: rgb(236, 230, 35);
+    color: darkblue;
+    text-shadow: var(--text-shadow);
 }

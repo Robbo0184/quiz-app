@@ -16,10 +16,18 @@
     <main>
         <form id="questionForm" action="">
             <label class="form--label" for="question">Please enter your question: </label>
-            <textarea class="form--text--area" name="question" id="question" cols="30" rows="5"></textarea>
+            <textarea class="form--text--area" maxlength="150" name="question" id="question" cols="30" rows="5"></textarea>
+            <div class="count">
+                <span class="current1">0</span>
+                <span class="maximum">/150</span>
+              </div>
 
             <label class="form--label" for="answer">Please enter your answer:</label>
-            <textarea class="form--text--area" name="answer" id="answer" cols="30" rows="5"></textarea>
+            <textarea class="form--text--area" name="answer" maxlength="150" id="answer" cols="30" rows="5"></textarea>
+            <div class="count">
+                <span class="current2">0</span>
+                <span class="maximum">/ 150</span>
+              </div>
 
             <label class="form--label" for="tag">Please enter some categories for your question: </label>
             <input type="text" name="tag" id="tag">
@@ -27,6 +35,9 @@
             <button type="submit">Submit</button>
 
         </form>
+        <section class="question--card">
+           
+        </section>
     </main>
     <footer>
         <nav>
