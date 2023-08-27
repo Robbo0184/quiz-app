@@ -9,8 +9,8 @@ form {
     text-align: center;
     min-height: 70vh;
     background-color: aqua;
-    min-width: 70vw;
-    padding-bottom: 1.7rem;
+    min-width: 75vw;
+    padding: 1.7rem;
 }
 
 .count {
@@ -36,10 +36,11 @@ form {
     text-shadow: var(--text-shadow);
     padding: 2rem;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     gap: 2.4rem;
     align-items: center;
     min-height: 25vh;
-    width: 70vw;
+    min-width: 70vw;
     border: 2px solid grey ;
     box-shadow: var(--box-shadow);
 }

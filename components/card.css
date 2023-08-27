@@ -1,9 +1,40 @@
+body {
+    background-color: rgba(37, 31, 219, 0.546);
+}
+
+body.dark-mode{
+    background-color: var(--dark--mode--body-background);
+}
+
+
+header {
+    text-align: center;
+    margin: 1.6rem;
+    color: rgb(36, 223, 211);
+    text-shadow: var(--text-shadow);
+    position: relative;
+}
+
+body.dark-mode header {
+    color: var(--dark--mode--header--colour)
+}
+
+
+
+.darkmode--icon{
+    width: 3rem;
+    position: absolute;
+    right: 3rem;
+    top: 0.1rem;
+    
+}
+
+
 main {
     margin-bottom: 150px;
     display: flex;
     justify-content: center;
 }
-
 
 .card--section {
     display: flex;
@@ -31,6 +62,37 @@ main {
 
 }
 
+body.dark-mode .card--question {
+    background-color: var(--dark--mode--card-background);
+    color: var(--dark--mode--card--text);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+}
+
+.show--answer {
+    min-width: 9vw;
+    height: 6vh;
+    border-radius: 10%;
+    background-color: rgb(206, 123, 233);
+    color:rgb(255, 255, 255);
+    font-size: 1.1rem;
+    text-shadow: var(--text-shadow);
+}
+
+.show--answer:hover{
+    background-color: aqua;
+    min-width: 9.2vw;
+    height: 6.2vh;
+
+}
+
+body.dark-mode .show--answer{
+    background-color: var(--dark--mode--button--colour);
+}
+
+body.dark-mode .show--answer:hover{
+    background-color: var(--dark--mode--button--hover);
+}
 
 .card--answer {
     visibility: hidden;
@@ -40,9 +102,6 @@ main {
 .hidden {
     visibility: visible;
 }
-
-
-
 
 .bookmark--click {
     background-color: chartreuse;
@@ -74,3 +133,43 @@ main {
     color: darkblue;
     text-shadow: var(--text-shadow);
 }
+
+body.dark-mode .hashtag{
+    background-color: var(--dark--mode--hashtag--background);
+    color: var(--dark--mode--hashtag-text);
+}
+
+footer {
+    display: flex;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    border: 2px solid grey;
+    bottom: 0rem;
+    min-height: 7vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: aqua;
+}
+
+body.dark-mode nav{
+    background-color: var(--dark--mode--nav--background);
+}
+
+
+.nav--icon {
+    width: 4rem;
+}
+
+
+
+
+.darkmode--icon{
+    background-color: var(--dark--mode--darkmode--icon);
+}
+
+
