@@ -1,6 +1,7 @@
 const bookmark = document.querySelector('.card--bookmark');
 const answerButton = document.querySelector('#showAnswer');
 const answer = document.querySelector('#firstAnswer');
+
 const darkModeToggle = document.querySelector('#darkmodeToggle')
 const body = document.body
 
