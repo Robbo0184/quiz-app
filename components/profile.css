@@ -37,6 +37,7 @@ main {
 .card--profile--content{
     display: flex;
     flex-direction: column;
+    padding: 0 1rem;
     width: 70vw;
     background-color: var(--card-backround-colour);
     color:var(--card-text-colour);

@@ -1,29 +1,32 @@
+:root {
+    --text-shadow: 1px 1px 1px pink;
+    --box-shadow: 4px 4px 4px rgba(223, 75, 17, 0.56);
+    --card-backround-colour: rgb(32, 138, 102);
+    --card-text-colour: rgb(235, 234, 193);
+    --dark--mode--body-background: rgba(1, 1, 17, 0.783);
+    --dark--mode--card-background: rgb(119, 32, 138);
+    --dark--mode--card--text: rgba(255, 255, 255, 1);
+    --dark--mode--header--colour: rgb(226, 43, 92);
+    --dark--mode--button--colour: green;
+    --dark--mode--button--hover: chartreuse;
+    --dark--mode--hashtag--background: chocolate;
+    --dark--mode--hashtag-text: antiquewhite;
+    --dark--mode--nav--background: rgb(226, 43, 150);
+    --dark--mode--darkmode--icon: antiquewhite;
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
  }
 
- body {
-    background-color: rgba(37, 31, 219, 0.546);
-}
-
-header {
-    text-align: center;
-    margin: 1.6rem;
-    color: rgb(36, 223, 211);
-    text-shadow: var(--text-shadow);
-}
 
 main {
     margin-bottom: 150px;
     display: flex;
     justify-content: center;
 }
- 
-:root {
-    --text-shadow: 1px 1px 1px pink;
-    --box-shadow: 4px 4px 4px rgba(223, 75, 17, 0.56);
-    --card-backround-colour: rgb(32, 138, 102);
-    --card-text-colour: rgb(235, 234, 193)
-}
+
+

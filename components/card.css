@@ -1,9 +1,39 @@
-main {
-    margin-bottom: 150px;
-    display: flex;
-    justify-content: center;
+body {
+    background-color: rgba(37, 31, 219, 0.546);
+    animation-name: body;
+    animation-duration: 2s;
 }
 
+
+
+body.dark-mode{
+    background-color: var(--dark--mode--body-background);
+}
+
+#quizAppLogo{
+    animation-name: header;
+    animation-duration: 2s;
+}
+
+header {
+    text-align: center;
+    margin: 1.6rem;
+    color: rgb(36, 223, 211);
+    text-shadow: var(--text-shadow);
+    position: relative;
+}
+
+body.dark-mode header {
+    color: var(--dark--mode--header--colour)
+}
+
+.darkmode--icon{
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.1rem;
+    
+}
 
 .card--section {
     display: flex;
@@ -28,12 +58,56 @@ main {
     width: 70vw;
     border: 2px solid grey ;
     box-shadow: var(--box-shadow);
+    animation-name: card;
+    animation-duration: 2s;
 
+}
+
+body.dark-mode .card--question {
+    background-color: var(--dark--mode--card-background);
+    color: var(--dark--mode--card--text);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+}
+
+.show--answer {
+    min-width: 9vw;
+    height: 6vh;
+    border-radius: 10%;
+    background-color: rgb(206, 123, 233);
+    color:rgb(255, 255, 255);
+    font-size: 1.1rem;
+    text-shadow: var(--text-shadow);
+    animation-name: button;
+    animation-duration: 2s;
+}
+
+.show--answer:hover{
+    background-color: aqua;
+    min-width: 9.2vw;
+    height: 6.2vh;
+
+}
+
+body.dark-mode .show--answer{
+    background-color: var(--dark--mode--button--colour);
+}
+
+body.dark-mode .show--answer:hover{
+    background-color: var(--dark--mode--button--hover);
 }
 
 .card--answer {
     visibility: hidden;
-    padding-bottom: rem;
+    padding-bottom: 1rem;
+}
+
+.hidden {
+    visibility: visible;
+}
+
+.bookmark--click {
+    background-color: chartreuse;
 }
 
 .card--bookmark {
@@ -41,6 +115,7 @@ main {
      position: absolute;
      top: -9%;
      right: 0;
+    
      
     }
 
@@ -58,6 +133,84 @@ main {
     border-radius: 10%;
     padding: 0.2rem;
     background-color: rgb(236, 230, 35);
+    animation-name: hashtags;
+    animation-duration: 2s;
     color: darkblue;
     text-shadow: var(--text-shadow);
+    
 }
+
+body.dark-mode .hashtag{
+    background-color: var(--dark--mode--hashtag--background);
+    color: var(--dark--mode--hashtag-text);
+}
+
+footer {
+    display: flex;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    border: 2px solid grey;
+    bottom: 0rem;
+    min-height: 7vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: aqua;
+    animation-name: navbar;
+    animation-duration: 2s;
+}
+
+body.dark-mode nav{
+    background-color: var(--dark--mode--nav--background);
+}
+
+
+.nav--icon {
+    width: 4rem;
+}
+
+
+.darkmode--icon{
+    background-color: var(--dark--mode--darkmode--icon);
+}
+
+
+@keyframes body {
+    from {background-color: rgba(37, 31, 219, 0.546)}
+    to {background-color: rgba(219, 31, 207, 0.546)}
+  }
+
+
+
+@keyframes header {
+    from {color: rgb(36, 223, 211)}
+    to {color: yellow;}
+  }
+
+  @keyframes button {
+    from {background-color: rgb(206, 123, 233)}
+    to {background-color: rgb(255, 55, 0);}
+  }
+
+  @keyframes card {
+    from {background-color: var(--card-backround-colour)}
+    to {background-color: rgb(238, 255, 0);}
+    from {color: var(--card-text-colour)}
+    to {color: rgb(195, 0, 255);}
+  }
+
+
+
+  @keyframes hashtags {
+    from {background-color: rgb(236, 230, 35)}
+    to {background-color: rgb(236, 35, 226)}
+  }
+
+  @keyframes navbar {
+    from {background-color: aqua}
+    to {background-color: rgb(236, 82, 35)}
+  }

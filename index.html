@@ -5,31 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./js/app.js" defer></script>
     <title>Quiz App Homepage</title>
 
 </head>
 
 <body>
     <header>
-        <h1>Quiz App</h1>
+        <h1 id="quizAppLogo">Quiz App</h1>
+        <button id="darkmodeToggle">
+            <img src="./images/darkmode.png" alt="dark mode icon" class="darkmode--icon">
+        </button>
     </header>
     <main>
         <section class="card--section">
             <article class="card--question">
-                
-                    <img class="card--bookmark" aria-label="add to bookmarks" src="./images/bookmark.png" alt="bookmark icon">
-                
+
+                <img class="card--bookmark" aria-label="add to bookmarks" src="./images/bookmark.png"
+                    alt="bookmark icon">
+
                 <h2>What is the national currency of Morocco?</h2>
-                <button aria-label="show answer" class="show--answer">Show Answer</button>
-                <h2 class="card--answer">The Moroccan Dirham</h2>
+                <button id="showAnswer" class="show--answer">Show Answer</button>
+                <h2 id="firstAnswer" class="card--answer">The Moroccan Dirham</h2>
                 <section class="hashtag-container">
                     <p class="hashtag">#general knowledge</p>
                 </section>
             </article>
             <article class="card--question">
-                
-                    <img class="card--bookmark" aria-label="add to bookmarks" src="./images/bookmark.png" alt="bookmark icon">
-               
+
+                <img class="card--bookmark" aria-label="add to bookmarks" src="./images/bookmark.png"
+                    alt="bookmark icon">
+
                 <h2>What is the largest lake in the world?</h2>
                 <button aria-label="show answer" class="show--answer">Show Answer</button>
                 <h2 class="card--answer">The Caspian Sea</h2>
@@ -39,9 +45,10 @@
                 </section>
             </article>
             <artilce class="card--question">
-                
-                    <img class="card--bookmark" aria-label="add to bookmarks" src="./images/bookmark.png"  alt="bookmark icon">
-                
+
+                <img class="card--bookmark" aria-label="add to bookmarks" src="./images/bookmark.png"
+                    alt="bookmark icon">
+
                 <h2>In which year was the film Back To The Future released?</h2>
                 <button aria-label="show answer" class="show--answer">Show Answer</button>
                 <h2 class="card--answer">1985</h2>
@@ -59,10 +66,15 @@
                         src="./images/home.png" aria-label="to home page" alt="homepage-icon"></a>
             </article>
             <article class="nav--element bookmark">
-                <a href="./bookmarks.html"><img class="nav--icon" src="./images/bookmark.png" aria-label="to bookmarks page" alt="bookmark-icon"></a>
+                <a href="./bookmarks.html"><img class="nav--icon" src="./images/bookmark.png"
+                        aria-label="to bookmarks page" alt="bookmark-icon"></a>
             </article>
             <article class="nav--element profile">
-                <a href="./profile-page.html"><img class="nav--icon" src="./images/profile.png" aria-label="to profile page" alt="profile-icon"></a>
+                <a href="./profile-page.html"><img class="nav--icon" src="./images/profile.png"
+                        aria-label="to profile page" alt="profile-icon"></a>
+            </article>
+            <article class="nav--element new-form">
+                <a href="./form.html"><img class="nav--icon" src="./images/form.png" alt="new-form-icon"></a>
             </article>
         </nav>
     </footer>
