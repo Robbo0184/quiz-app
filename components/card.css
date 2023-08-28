@@ -1,9 +1,18 @@
 body {
     background-color: rgba(37, 31, 219, 0.546);
+    animation-name: body;
+    animation-duration: 2s;
 }
+
+
 
 body.dark-mode{
     background-color: var(--dark--mode--body-background);
+}
+
+#quizAppLogo{
+    animation-name: header;
+    animation-duration: 2s;
 }
 
 header {
@@ -49,6 +58,8 @@ body.dark-mode header {
     width: 70vw;
     border: 2px solid grey ;
     box-shadow: var(--box-shadow);
+    animation-name: card;
+    animation-duration: 2s;
 
 }
 
@@ -67,6 +78,8 @@ body.dark-mode .card--question {
     color:rgb(255, 255, 255);
     font-size: 1.1rem;
     text-shadow: var(--text-shadow);
+    animation-name: button;
+    animation-duration: 2s;
 }
 
 .show--answer:hover{
@@ -120,6 +133,8 @@ body.dark-mode .show--answer:hover{
     border-radius: 10%;
     padding: 0.2rem;
     background-color: rgb(236, 230, 35);
+    animation-name: hashtags;
+    animation-duration: 2s;
     color: darkblue;
     text-shadow: var(--text-shadow);
     
@@ -145,6 +160,8 @@ nav {
     width: 100vw;
     z-index: 10;
     background-color: aqua;
+    animation-name: navbar;
+    animation-duration: 2s;
 }
 
 body.dark-mode nav{
@@ -162,3 +179,38 @@ body.dark-mode nav{
 }
 
 
+@keyframes body {
+    from {background-color: rgba(37, 31, 219, 0.546)}
+    to {background-color: rgba(219, 31, 207, 0.546)}
+  }
+
+
+
+@keyframes header {
+    from {color: rgb(36, 223, 211)}
+    to {color: yellow;}
+  }
+
+  @keyframes button {
+    from {background-color: rgb(206, 123, 233)}
+    to {background-color: rgb(255, 55, 0);}
+  }
+
+  @keyframes card {
+    from {background-color: var(--card-backround-colour)}
+    to {background-color: rgb(238, 255, 0);}
+    from {color: var(--card-text-colour)}
+    to {color: rgb(195, 0, 255);}
+  }
+
+
+
+  @keyframes hashtags {
+    from {background-color: rgb(236, 230, 35)}
+    to {background-color: rgb(236, 35, 226)}
+  }
+
+  @keyframes navbar {
+    from {background-color: aqua}
+    to {background-color: rgb(236, 82, 35)}
+  }

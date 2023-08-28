@@ -75,7 +75,7 @@ form.addEventListener('submit', (e) => {
     e.target.reset()
     characterCount1.textContent = '0';  
     characterCount2.textContent = '0'; 
-
+    questionInput.focus()
     
     
 
